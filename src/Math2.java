@@ -60,7 +60,7 @@ public class Math2 {
         funkThird.add((x, y, a, alpha, betta) -> 2 * x);
         funkThird.add((x, y, a, alpha, betta) -> 2 * y);
         funkThird.add((x, y, a, alpha, betta) -> Math.exp(x - 1));
-        funkThird.add((x, y, a, alpha, betta) -> 2 * y);
+        funkThird.add((x, y, a, alpha, betta) -> 3 * Math.pow(y, 3));
 
         LinkedList<Points> pn2 = new LinkedList<>();
         pn2.add(new Points(0, 0, 0, 1, 1));
@@ -85,9 +85,9 @@ public class Math2 {
     public static void newton(FunkSec f, FunkSec f2, FunkSec a, FunkSec b, FunkSec c, FunkSec d, Points pn) {
         int i = 0;
         double x1 = pn.x;
-        System.out.println("x1" + x1);
+        System.out.println("x1: " + x1);
         double y1 = pn.y;
-        System.out.println("x2" + x1);
+        System.out.println("x2: " + x1);
         double x, y;
         double a2 = pn.a;
         double alpha = pn.alpha;
@@ -101,13 +101,14 @@ public class Math2 {
             double ourFunkB = b.calculate(x, y, a2, alpha, betta);
             double ourFunkC = c.calculate(x, y, a2, alpha, betta);
             double ourFunkD = d.calculate(x, y, a2, alpha, betta);
-            double detA1 = (ourFunk * ourFunkB) - (ourFunk2 * ourFunkD);
+            double detA1 = (ourFunk  * ourFunkB) - (ourFunk2 * ourFunkD);
             double detA2 = (ourFunkA * ourFunk2) - (ourFunk * ourFunkC);
             double detJ = (ourFunkA * ourFunkD) - (ourFunkB * ourFunkC);
             x1 = x - (detA1 / detJ);
             y1 = y - (detA2 / detJ);
             i++;
-        } while (Math.abs(x1 - x) > eps && Math.abs(y1 - y) > eps);
+        } while (Math.sqrt(Math.pow(f.calculate(x1,y1,a2,alpha,betta),2) + Math.pow(f2.calculate(x1,y1,a2,alpha,betta),2)) > eps &&
+                Math.sqrt(Math.pow(x1-x,2) + Math.pow(y1-y,2)) > eps);
         System.out.println("Ответ: (" + x1 + "; " + y1 + ")");
         System.out.println("Количество итераций: " + i);
     }
