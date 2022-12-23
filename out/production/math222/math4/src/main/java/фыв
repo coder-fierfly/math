@@ -1,0 +1,44 @@
+C:\Users\фвьшт\.jdks\corretto-17.0.5\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.3\lib\idea_rt.jar=59757:C:\Program Files\JetBrains\IntelliJ IDEA 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath "D:\всякие приколюхи\5 сем\вычмат\math4\target\classes;C:\Users\фвьшт\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-controls\17.0.2\javafx-controls-17.0.2.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-controls\17.0.2\javafx-controls-17.0.2-win.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-graphics\17.0.2\javafx-graphics-17.0.2.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-graphics\17.0.2\javafx-graphics-17.0.2-win.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-base\17.0.2\javafx-base-17.0.2.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-base\17.0.2\javafx-base-17.0.2-win.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-fxml\17.0.2\javafx-fxml-17.0.2.jar;C:\Users\фвьшт\.m2\repository\org\openjfx\javafx-fxml\17.0.2\javafx-fxml-17.0.2-win.jar;C:\Users\фвьшт\.m2\repository\org\jfree\jfreechart\1.5.3\jfreechart-1.5.3.jar;C:\Users\фвьшт\.m2\repository\org\controlsfx\controlsfx\11.1.1\controlsfx-11.1.1.jar;C:\Users\фвьшт\.m2\repository\org\kordamp\bootstrapfx\bootstrapfx-core\0.4.0\bootstrapfx-core-0.4.0.jar" Task4_2
+������� 1, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 3
+x1:= 1.0 x2:= 2.0
+
+������� 2, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 5
+x1:= -3.460207612482997E-5 x2:= 1.000034602076125
+
+������� 3, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 13
+x1:= 1.015625 x2:= 0.5078125 x3:= -1.0
+
+������� 4, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 8
+x1:= -0.6640625 x2:= -0.328125 x3:= 1.0
+
+������� 5, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 14
+x1:= 0.9982331562864926 x2:= 1.9982928458824674 x3:= 0.9982331562864926 x4:= 1.9987928597461482 x5:= 0.9975013056575698 x6:= 1.9987928597461482
+
+������� 6, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 3
+x1:= 1.0 x2:= -1.0
+
+������� 7, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 752
+x1:= -14.688264333812839 x2:= -16.209182593125377
+
+������� 8, ������� �����������:= 2
+����� ������������� ������
+ e = 0.01 ��������: 310
+x1:= -3.3258317162702224E149 x2:= 1.9896351517548667E148 x3:= -4.025815085018839E147 x4:= -9.98281815403114E149
+
+
+
+Process finished with exit code 0
