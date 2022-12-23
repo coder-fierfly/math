@@ -1,0 +1,34 @@
+  /* public static List<List<first.Point>> runge2(LinkedList<Point> segment, LinkedList<FuncTX1X2> func) {
+        List<List<first.Point>> poiXY1 = new LinkedList<>();
+        for (int j = 0; j < 1; j++) {
+            double buffX1 = segment.get(j).getX1();
+            double buffX2 = segment.get(j).getX2();
+            double buffT = segment.get(j).getY();
+            List<first.Point> bufX1T = new LinkedList<>();
+            List<first.Point> bufX2T = new LinkedList<>();
+            first.Point p1;
+            first.Point p2;
+            for (double i = 0; i < 10; i+=0.1) {
+                double k1 = func.get(j).calculate(buffT, buffX1, buffX2);
+                double m1 = func.get(j + 1).calculate(buffT, buffX1, buffX2);
+                double k2 = func.get(j).calculate(buffT + STEP / 2, buffX1 + k1 *STEP/ 2, buffX2 + STEP*m1);
+                double m2 = func.get(j + 1).calculate(buffT + STEP / 2, buffX1 + k1*STEP / 2, buffX2 + m1 *STEP);
+                double k3 = func.get(j).calculate(buffT + STEP / 2, buffX1 + k2*STEP / 2, buffX2 + m2 *STEP/2);
+                double m3 = func.get(j + 1).calculate(buffT + STEP / 2, buffX1 + k2*STEP / 2, buffX2 + m2 *STEP/2);
+                double k4 = func.get(j).calculate(buffT + STEP, buffX1 + STEP*k3, buffX2 +STEP*m3);
+                double m4 = func.get(j).calculate(buffT + STEP, buffX1 + STEP*k3, buffX2 + STEP*m3);
+                buffX1 += (STEP / 6)*(k1 + 2 * k2 + 2 * k3 + k4);
+                buffX2 += (STEP / 6)*(m1 + 2 * m2 + 2 * m3 + m4);
+                p1 = new first.Point(buffT, buffX1);
+                System.out.println("buff T =" + buffT);
+                System.out.println(buffX1);
+                p2 = new first.Point(buffT,buffX2);
+                bufX1T.add((int) (i), p1);
+                bufX2T.add((int) (i), p2);
+                buffT+=0.1;
+            }
+            poiXY1.add(j, bufX1T);
+            poiXY1.add((j + 1), bufX2T);
+        }
+        return poiXY1;
+    }*/
